@@ -5,6 +5,6 @@ using namespace std;
 int main(){
 int n;
 scanf("%d", &n);
-printf("%d %d", n*10,n*9);
+printf("%d %d", n*9,n*8);
 return 0;
 }
