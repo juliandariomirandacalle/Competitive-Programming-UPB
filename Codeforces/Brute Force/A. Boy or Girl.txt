@@ -1,0 +1,28 @@
+import java.util.*;
+public class Cosa {
+ 
+ 
+    public static void main(String[] args) {
+        
+        Scanner entrada=new Scanner(System.in);
+        
+        String name;
+        name=entrada.next();
+ 
+        HashSet<Character> cadena = new HashSet<>();
+        
+        for (int i = 0; i < name.length(); i++) {
+         
+            cadena.add(name.charAt(i));
+        }
+        
+        
+        if(cadena.size()%2==0){
+            
+            System.out.println("CHAT WITH HER!");
+        }
+        else{System.out.println("IGNORE HIM!");}
+        
+    }
+    
+}
