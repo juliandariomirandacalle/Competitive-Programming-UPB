@@ -1,0 +1,36 @@
+import java.util.*;
+ 
+public class Prime {
+ 
+	public static void main(String[] args) {
+		Scanner en = new Scanner(System.in);
+		int n = en.nextInt(), contsu = 0;
+		ArrayList<Integer> lista = new ArrayList<>();
+		for (int i = 2; i <= n; i++) {
+			int cont = 0;
+			for (int j = 2; j < n; j++) {
+				if ((i != j) && (i % j == 0)) {
+					cont++;
+				}
+ 
+			}
+			if (cont == 0) {
+				lista.add(i);
+			}
+		}
+		for (int i = 1; i <= n; i++) {
+			int contSe = 0;
+			for (Integer es : lista) {
+				if (i % es == 0) {
+					contSe++;
+				}
+			}
+			if (contSe == 2) {
+				contsu++;
+ 
+			}
+ 
+		}
+		System.out.println(contsu);
+	}
+}
