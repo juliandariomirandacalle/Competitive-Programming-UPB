@@ -1,0 +1,32 @@
+import java.util.*;
+ 
+public class Testing {
+	public static void main(String[] args) {
+ 
+	
+		Scanner sc=new Scanner(System.in);
+		int n,m;
+		String fL,sL;
+		String c="";
+		n=sc.nextInt();
+		m=sc.nextInt();
+		Map<String,String> hm=new TreeMap<>()
+;		for (int i = 0; i < m; i++) {
+			fL=sc.next();
+			sL=sc.next();
+			hm.put(fL, sL);
+		}
+ 
+		for (int i = 0; i < n; i++) {
+		fL=sc.next();
+		if(hm.get(fL).length()<fL.length()) {
+			c+=hm.get(fL)+" ";
+		}
+		else {
+			c+=fL+" ";
+		}
+		}
+	System.out.println(c);	
+	}
+	
+}
