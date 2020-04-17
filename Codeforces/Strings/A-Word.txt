@@ -1,0 +1,25 @@
+import java.util.*;
+ 
+public class Testing {
+	public static void main(String[] args) {
+ 
+	
+		Scanner sc=new Scanner(System.in);
+		String s;
+		s=sc.next();
+		int mayusculas=0;
+		for (int i = 0; i < s.length(); i++) {
+			if(Character.isUpperCase(s.charAt(i))) {
+				mayusculas++;
+			}
+		}
+		if(mayusculas>s.length()-mayusculas) {
+			System.out.println(s.toUpperCase());
+		}
+		else {
+			System.out.println(s.toLowerCase());
+		}
+		
+	}
+	
+}
