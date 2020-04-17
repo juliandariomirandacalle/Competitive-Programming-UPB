@@ -1,0 +1,34 @@
+import java.util.*;
+public class beautifulyear {
+ 
+	public static void main(String[] args) {
+		
+		Scanner entrada=new Scanner(System.in);
+		
+		int year;
+		
+		year=entrada.nextInt();
+		
+		for (int i = 0; i < 9000; i++) {
+			
+			year++;
+			
+			String change=String.valueOf(year);
+			
+			HashSet<Character> hash=new HashSet<Character>();
+			
+			for (int j = 0; j < change.length(); j++) {
+				
+				hash.add(change.charAt(j));
+			}
+			
+			if(hash.size()<4) {}
+			else {break;}
+			
+		}
+		
+		System.out.println(year);
+		
+	}
+ 
+}
