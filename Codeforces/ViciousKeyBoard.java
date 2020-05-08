@@ -2,7 +2,7 @@ package codefor;
 
 import java.util.Scanner;
 
-public class ViciousKeyBoard {
+public class ViciousKeyBoard { //Problem 801A
 
     public static void main(String[] args) {
         Scanner tec;
